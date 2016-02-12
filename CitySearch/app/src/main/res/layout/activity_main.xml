@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.envy.citysearch.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/suggest1_framelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/suggest1_imageview"
+                        android:layout_width="235dp"
+                        android:layout_height="285dp"
+                        android:background="@android:color/holo_blue_light"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/koenig" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/suggest1_title_textview"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:background="#a3000000"
+                            android:text="Title goes here"
+                            android:textColor="#ffffff"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/suggest1_desc_textview"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/suggest1_title_textview"
+                            android:background="#6c000000"
+                            android:text="Mini description"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/suggest2_framelayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/suggest2_imageview"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@android:color/holo_blue_bright"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/lambo" />
+
+                            <TextView
+                                android:id="@+id/suggest2_title_textview"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:background="#91000000"
+                                android:textColor="#ffffff"
+                                android:text="Sample text"
+                                android:textSize="15sp"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/suggest3_framelayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/suggest3_imageview"
+                            android:layout_width="148dp"
+                            android:layout_height="185dp"
+                            android:background="@android:color/holo_blue_dark"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/mclaren" />
+
+                        <TextView
+                            android:id="@+id/suggest3_title_textview"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:background="#91000000"
+                            android:textColor="#ffffff"
+                            android:text="Sample text"
+                            android:textSize="15sp"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#17000000" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/venue1"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="1dp"
+                android:background="#000519"
+                android:src="@drawable/ic_trending"
+                />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/venue2"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="1dp"
+                android:background="#000519"
+                android:src="@drawable/ic_surprise" />
+
+            <ImageButton
+                android:layout_weight="1"
+                android:id="@+id/venue3"
+                android:layout_width="0dp"
+                android:layout_height="125dp"
+                android:layout_margin="1dp"
+                android:background="#000519"
+                android:src="@drawable/ic_heart" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <Button
+                android:id="@+id/venue4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#000519"
+                android:drawableTop="@drawable/ic_restaurant_white"
+                android:text="Food"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/venue5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#000519"
+                android:drawableTop="@drawable/ic_drinks_white"
+                android:text="Drinks"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/venue6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#000519"
+                android:drawableTop="@drawable/ic_play"
+                android:text="fun"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/venue7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                android:background="#000519"
+                android:drawableTop="@drawable/ic_car_white"
+                android:text="Auto"
+                android:textColor="#ffffff"
+
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btc"
+                    android:background="#ff8000" />
+
+                <Button
+                    android:id="@+id/donateButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ff8000"
+                    android:text="Donate"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+</LinearLayout>
+    </RelativeLayout>
